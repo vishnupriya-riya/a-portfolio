@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu- Portfolio</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddf8f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #258077;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #257a73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #dcb3b3;
+}
+
+footer {
+    background-color: #5da19a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vishnu Priya VV</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="about.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>MCA Student at KGISL Institute of Information Management.I am a web developer. Passionate to develop websites and applications.</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am currently pursuing my Master of Computer Applications (MCA) at KGISL Institute of Information Management (KGISL-IIM). My academic journey has given me a strong foundation in software development, programming, and information technology. I am passionate about exploring new technologies and using my skills to develop innovative solutions. In addition to my studies, I enjoy participating in tech workshops and seminars to further enhance my knowledge. My goal is to become a proficient software developer and contribute to impactful projects in the tech industry.</p>
+                </div>
+                <div class="about-image">
+                    <img src="C:\Users\VISHNU PRIYA\OneDrive\Documents\Protfolio_IIM\img\WhatsApp Image 2024-02-15 at 09.04.40_e31d939f.jpg" alt="Profile Picture" height="100" width="100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1:Online Bookstore Management System</h3>
+                <p>This project involved creating a comprehensive online bookstore management system where users can create accounts, browse through various book categories, search for specific books, and add them to their shopping cart. The system also includes an admin panel where administrators can manage inventory, process orders, and handle user inquiries.</p>
+                <img src="https://cdn4.vectorstock.com/i/1000x1000/96/08/online-book-store-composition-vector-20379608.jpg" alt="Project 1" height="200" width="200">
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Student Attendance Management System</h3>
+                <p>The Student Attendance Management System was designed to simplify attendance tracking for educational institutions. The application allows teachers to mark attendance, view attendance records, and generate attendance reports for individual students or entire classes. Students and parents can also log in to view attendance records.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3OwiyVYqu5N1fVl9ic2Dp_QcMRVEL29X2A&s" alt="Project 2">
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 vishnupriya</p>
+        </div>
+    </footer>
+</body>
+</html>
